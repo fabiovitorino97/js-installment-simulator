@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulador de Parcelas</title>
+    <link rel="shortcut icon" href="./img/icone.png" sizes=" 250x250">
+
+    <!-- Inclusão do arquivo CSS externo -->
+    <link rel="stylesheet" type="text/css" href="./css/opsimulador.css">
+
+    <!-- Inclusão de links para fontes do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form">
+        <!-- Inclusão do logotipo -->
+        <img src="./img/logo.png" alt="Logo Financeira xyz"  class="logo"> 
+        <h1>SIMULADOR DE PARCELAS</h1>
+
+          <!-- Rótulos e campos de entrada para valor do financiamento e número de parcelas -->
+        <label for="financiamento" class="num">Valor do Financiamento:</label>
+        <input type="number" id="financiamento" name="financiamento" min="0" max="21000"><br>
+
+        <label for="parcelas" class="num">Número de Parcelas:</label>
+        <input type="number" id="parcelas" name="parcelas" min="6" max="36"><br>
+
+         <!-- Seleção de Pessoa Física ou Jurídica -->
+        <p>Pessoa Física ou Pessoa Jurídica?</p>
+        <input type="radio" id="pessoaFisica" name="pessoa" value="fisica">
+        <label for="pessoaFisica">Física</label>
+        <input type="radio" id="pessoaJuridica" name="pessoa" value="juridica">
+        <label for="pessoaJuridica">Jurídica</label><br>
+
+        <!-- Seleção de Empreenda Linha 1 ou Empreenda Linha 2 -->
+        <p>Linha 1 ou Linha 2?</p>
+        
+         <!-- Tooltip com informações adicionais -->
+        <div class="tooltip"> <img src="./img/tool.png">
+            <span class="tooltiptext">"Linha 1" - Máximo 30 Prestações PJ ou 24 prestações PF. Carência automática 30 dias <br>"Linha 2" -EXCLUSIVO
+            P/MULHERES - Máximo 36 prestações PJ ou 30 PF. Carência automática 60 dias</span>
+          </div>
+
+        <input type="radio" id="linha1" name="empreenda" value="Linha 1">
+        <label for="linha1">Linha 1</label>
+        <input type="radio" id="linha2" name="empreenda" value="Linha 2">
+        <label for="linha2">Linha 2</label><br>
+
+        <!-- Seleção se a atividade é exercida há mais de um ano -->
+        <p>Atividade é exercida há mais de um ano?</p>
+        <input type="radio" id="atividadeUmAnoSim" name="atividadeUmAno" value="sim">
+        <label for="atividadeUmAnoSim">Sim</label>
+        <input type="radio" id="atividadeUmAnoNao" name="atividadeUmAno" value="nao">
+        <label for="atividadeUmAnoNao">Não</label><br>
+        
+        <!-- Seleção se é o primeiro crédito -->
+        <p>Primeiro Crédito?</p>
+        <input type="radio" id="primeiroCreditoSim" name="primeiroCredito" value="sim">
+        <label for="primeiroCreditoSim">Sim</label>
+        <input type="radio" id="primeiroCreditoNao" name="primeiroCredito" value="nao">
+        <label for="primeiroCreditoNao">Não</label><br>
+    
+        <!-- Botão para calcular -->
+        <button type='button' id='btCalcular'>CALCULAR</button>
+        
+        <!-- Exibição dos resultados -->
+        <h3 id="valorFinanciado"></h3>
+        <h3 id="valorTotal"></h3>
+        <h3 id="carencia"></h3>
+        <h3 id="valorParcela"></h3>
+        <h3 id="juros"></h3>
+        
+         <!-- Link para iniciar a solicitação de financiamento -->
+        <h3> <br>Para iniciar sua solicitação de financiamento, <a href="http://linktr.ee/bancodopovofranca" target="_blank">clique aqui!</a></h3>
+    </div>
+
+    <!-- Rodapé com informações adicionais -->
+    <footer>
+    <p id="aviso">Este simulador fornece um valor orientativo para se ter
+        uma estimativa do valor do financiamento, no entanto, podem haver divergências.
+        <br>O contrato assinado é o que prevalece e as normas 
+        do banco podem ser alteradas sem aviso prévio e a qualquer momento. <br>Entre em contato para informações atualizadas</p>
+    </footer>
+     
+
+    <!-- Inclusão do arquivo JavaScript externo -->
+    <script src='./js/simulador.js'></script>
+</body>
+</html>
