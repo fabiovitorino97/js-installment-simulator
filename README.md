@@ -23,7 +23,7 @@ Para utilizar a calculadora, siga os passos abaixo:
     Indique se a atividade é exercida há mais de um ano.
     Marque se é o primeiro crédito.
     
-3. Clique em "Calcular"
+3. Clique em "Calcular":
     Clique no botão "Calcular" para obter os resultados da simulação.
 
 ## Notas Adicionais
