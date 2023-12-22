@@ -6,7 +6,7 @@ Este projeto é um simulador de parcelas desenvolvido em HTML, CSS e JavaScript.
 1. **Valor do Financiamento:** Campo para inserir o valor desejado para o financiamento.
 2. **Número de Parcelas:** Campo para selecionar o número de parcelas desejadas.
 3. **Pessoa Física ou Jurídica:** Opção para selecionar se o financiamento é para Pessoa Física ou Jurídica.
-4. **Empreenda Rápido ou Empreenda Mulher:** Escolha entre as opções de financiamento "Empreenda Rápido" ou "Empreenda Mulher".
+4. **Linha 1 ou Linha 2:** Escolha entre as opções de financiamento "Linha 1" ou "Linha 2".
 5. **Atividade Exercida por Mais de Um Ano:** Seleção para indicar se a atividade é exercida há mais de um ano.
 6. **Primeiro Crédito:** Indicação se é o primeiro crédito solicitado.
 7. **Botão Calcular:** Inicia o cálculo com base nas informações fornecidas.
